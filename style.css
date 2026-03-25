@@ -1,0 +1,77 @@
+body {
+    background-color: #fafafa;
+    font-family: -apple-system, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator-card {
+    background: white;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+}
+
+header h1 { font-size: 24px; margin-bottom: 5px; }
+.subtitle { color: #8e8e93; font-size: 14px; margin-bottom: 30px; }
+
+label {
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #aeaeae;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #efefef;
+    border-radius: 12px;
+    font-size: 18px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus { border-color: #007aff; }
+
+button {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button:active { transform: scale(0.98); }
+
+#result-area {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #f2f2f2;
+}
+
+#result-area p { font-size: 14px; color: #8e8e93; margin: 0; }
+#result-area h2 { font-size: 32px; margin: 10px 0 0; color: #34c759; }
+
+.hidden { display: none; }
+.show { display: block; animation: fadeIn 0.5s; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
